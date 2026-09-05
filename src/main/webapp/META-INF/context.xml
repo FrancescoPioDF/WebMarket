@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context path="/webmarket"/>
+<Context path="/webmarket">
+    <Resource name="jdbc/webmarket"
+              auth="Container"
+              type="javax.sql.DataSource"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/webmarket?useSSL=false&amp;serverTimezone=Europe/Rome&amp;characterEncoding=UTF-8&amp;allowPublicKeyRetrieval=true"
+              username="root"
+              password=""
+              maxTotal="10"
+              maxIdle="2"
+              maxWaitMillis="10000"/>
+</Context>
